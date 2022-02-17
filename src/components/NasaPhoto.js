@@ -5,7 +5,15 @@ const NasaPhoto = (props) => {
     <div className="nasa-photo-wrapper">
       <h3>{props.photo.title}</h3>
       <p>{props.photo.date}</p>
-      <img src={props.photo.url} />
+      <iframe
+        src={props.photo.url}
+        frameborder="0"
+        height="500"
+        width="600"
+        allow="autoplay; encrypted-media"
+        allowFullScreen
+        title="video"
+      />
       <p className="explanation">({props.photo.explanation} </p>
     </div>
   );
